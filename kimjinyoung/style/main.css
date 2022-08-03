@@ -1,0 +1,319 @@
+body {
+  background-color: rgb(250, 250, 250);
+}
+
+.bold {
+  font-weight: bold;
+}
+
+/* ---nav--- */
+#nav {
+  display: flex;
+  background-color: white;
+  padding: 12px;
+  justify-content: space-around;
+  align-items: center;
+  border-bottom: 1px solid rgb(219, 219, 219);
+}
+
+.navBox {
+  display: flex;
+  align-items: center;
+}
+
+.navLogo {
+  height: 27.5px;
+  padding-right: 10px;
+  border-right: black solid 3px;
+}
+
+.navTitle {
+  padding-left: 10px;
+  font-family: "Lobster", cursive;
+  font-size: 25px;
+}
+
+.searchBox {
+  position: relative;
+}
+
+.searchInput {
+  height: 30px;
+  width: 250px;
+  text-align: center;
+  background-color: rgb(239, 239, 239);
+  border: none;
+  border-radius: 5px;
+}
+
+.searchIcon {
+  height: 17.5px;
+  position: absolute;
+  top: 7px;
+  left: 12px;
+}
+
+.navExplore,
+.navHeart,
+.navProfile {
+  height: 27.5px;
+  margin: 0 5px;
+}
+/* ---nav--- */
+
+/* ---section, article--- */
+#section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.article {
+  background-color: white;
+  width: 450px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  border-radius: 8px;
+  border: 1px solid rgb(219, 219, 219);
+  margin: 20px 0 0 0;
+}
+
+.articleTop {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 430px;
+  margin: 10px;
+}
+
+.articleBox {
+  display: flex;
+  align-items: center;
+}
+
+.articleProfile {
+  height: 40px;
+  width: 40px;
+  border-radius: 20px;
+}
+
+.articleId {
+  margin-left: 15px;
+}
+
+.articleMore {
+  height: 17.5px;
+}
+
+.articleImg {
+  width: 100%;
+}
+
+.articleMiddle {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 430px;
+  margin: 10px;
+}
+
+.articleHeart,
+.articleChat,
+.articleShare {
+  height: 25px;
+  margin-right: 12px;
+}
+
+.articleBookmark {
+  height: 25px;
+}
+
+.chatBox {
+  font-size: 14px;
+  width: 430px;
+  margin: 0 10px 5px 10px;
+}
+
+.like {
+  margin-bottom: 18px;
+}
+
+.commentsWrapper {
+  display: flex;
+  justify-content: space-between;
+  width: 440px;
+}
+
+.commentsHeart {
+  height: 14px;
+}
+
+.commentsInputWrapper {
+  margin-top: 10px;
+  display: flex;
+  width: 100%;
+  height: 45px;
+  align-items: center;
+  border-top: 1px solid rgb(219, 219, 219);
+}
+
+.commentsInputWrapper2 {
+  width: 400px;
+  height: 44px;
+}
+
+.commentsInput {
+  margin: 10px;
+  border: none;
+  width: 380px;
+  height: 23px;
+  font-size: 15px;
+}
+
+.commentsBtn {
+  height: 40px;
+  width: 50px;
+  border: none;
+  background-color: white;
+  color: rgb(74, 149, 246);
+  font-size: 15px;
+}
+
+.commentsInput:focus {
+  outline: none;
+}
+/* ---section, article--- */
+
+/* --여기부턴 css 기초설정-- */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
