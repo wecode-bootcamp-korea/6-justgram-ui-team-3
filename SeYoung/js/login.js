@@ -51,4 +51,7 @@ function onInput(event) {
 
 inputIDByID.addEventListener("input", onInput);
 inputPWbyID.addEventListener("input", onInput);
-loginButtonByID.addEventListener("click", onInput);
+loginButtonByID.addEventListener("click", (event) => {
+  event.preventDefault(); //해당 기능을 꺼버리고
+  // 커스텀 로직
+});
