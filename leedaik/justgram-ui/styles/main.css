@@ -1,0 +1,215 @@
+body {
+  margin: 0;
+  background-color: rgb(238, 238, 238);
+  display: flex;
+  justify-content: center;
+}
+body header {
+  background-color: white;
+  border-bottom: 1px solid gray;
+  position: fixed;
+  padding: 20px 0;
+  width: 100%;
+  left: 0;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  z-index: 10;
+}
+body header div.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1100px;
+  width: 100%;
+}
+body header div.container > a {
+  margin: 0;
+  font-family: 'Lobster', cursive;
+  font-size: 24px;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  position: relative;
+  text-decoration: none;
+  color: black;
+}
+body header div.container > a::after {
+  content: '';
+  position: absolute;
+  left: 52px;
+  top: 0;
+  width: 2px;
+  height: 100%;
+  background-color: black;
+}
+body header div.container input {
+  padding: 4px;
+  padding: 10px;
+  width: 260px;
+  border: none;
+  background-color: rgb(231, 231, 231);
+  border-radius: 10px;
+}
+body header div.container input:focus {
+  outline: none;
+}
+body header div.container ul {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  gap: 30px;
+}
+body main {
+  margin-top: 120px;
+  max-width: 1100px;
+  width: 100%;
+  display: flex;
+  gap: 40px;
+}
+body main div.feedContainer {
+  width: 60%;
+}
+body main div.feedContainer ul.feed {
+  padding: 0;
+  list-style: none;
+  margin: 0;
+}
+body main div.feedContainer ul.feed > li {
+  margin-bottom: 30px;
+  background-color: white;
+  overflow: hidden;
+  border-radius: 10px;
+  border: 1px solid lightgray;
+}
+body main div.feedContainer ul.feed > li div.feedHeader {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 20px;
+}
+body main div.feedContainer ul.feed > li div.feedHeader div.profileContainer {
+  width: 32px;
+  height: 32px;
+  overflow: hidden;
+  border-radius: 16px;
+}
+body main div.feedContainer ul.feed > li div.feedHeader h3 {
+  margin: 0;
+  width: 90%;
+}
+body main div.feedContainer ul.feed > li div.feedHeader button {
+  display: block;
+  border: none;
+  background-color: transparent;
+  margin: 0;
+  padding: 0;
+  width: 30px;
+}
+body main div.feedContainer ul.feed > li > img {
+  width: 100%;
+}
+body main div.feedContainer ul.feed > li ul.feedMenus {
+  border-bottom: 1px solid lightgray;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  list-style: none;
+  margin: 0;
+  gap: 10px;
+  position: relative;
+}
+body main div.feedContainer ul.feed > li ul.feedMenus li {
+  display: flex;
+  align-items: center;
+}
+body main div.feedContainer ul.feed > li ul.feedMenus li span {
+  font-size: 30px;
+}
+body main div.feedContainer ul.feed > li ul.feedMenus li:last-of-type {
+  position: absolute;
+  right: 20px;
+}
+body main div.feedContainer ul.feed > li div.feedComment {
+  padding: 20px;
+}
+body main div.feedContainer ul.feed > li div.feedComment ul.commentList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+body main div.feedContainer ul.feed > li div.feedComment ul.commentList li {
+  margin-bottom: 10px;
+}
+body main div.feedContainer ul.feed > li div.feedComment ul.commentList li p {
+  margin: 0;
+  word-break: break-all;
+  display: flex;
+  gap: 10px;
+}
+body main div.feedContainer ul.feed > li div.feedComment form {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+body main div.feedContainer ul.feed > li div.feedComment form input {
+  border: none;
+  width: 90%;
+  font-size: 18px;
+}
+body main div.feedContainer ul.feed > li div.feedComment form input:focus {
+  outline: none;
+}
+body main div.feedContainer ul.feed > li div.feedComment form button {
+  border: none;
+  margin: 0;
+  padding: 0;
+  background-color: transparent;
+  color: skyblue;
+  font-weight: 700;
+  font-size: 18px;
+}
+body main div.feedContainer ul.skeleton {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  list-style: none;
+}
+body main div.feedContainer ul.skeleton li {
+  background-color: white;
+  border-radius: 10px;
+  padding: 20px 0;
+  margin-bottom: 30px;
+  border: 1px solid lightgray;
+}
+body main div.feedContainer ul.skeleton li div.title {
+  height: 30px;
+  width: 200px;
+  margin: 0 20px;
+  background-color: lightgray;
+}
+body main div.feedContainer ul.skeleton li div.image {
+  height: 400px;
+  background-color: lightgray;
+  margin: 20px 0;
+}
+body main div.feedContainer ul.skeleton li div.skComment {
+  padding: 20px;
+}
+body main div.feedContainer ul.skeleton li div.skComment > div {
+  height: 20px;
+  margin-bottom: 20px;
+  background-color: lightgray;
+}
+body main div.feedContainer ul.skeleton li div.input {
+  height: 30px;
+  background-color: lightgray;
+  margin: 0 20px;
+}
+body main aside {
+  width: calc(40% - 40px);
+  border: 1px solid black;
+  height: 400px;
+}
