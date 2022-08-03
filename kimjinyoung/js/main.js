@@ -1,25 +1,23 @@
-const commentsBtn = document.querySelector(".commentsBtn");
-const commentsInput = document.querySelector(".commentsInput");
-const commentsBox = document.querySelector(".commentsBox");
+const commentsBtns = document.querySelectorAll(".commentsBtn");
+const commentsInputs = document.querySelectorAll(".commentsInput");
+const commentsBoxes = document.querySelectorAll(".commentsBox");
 
-function leaveComments(e) {
-  const commentsWrapper = document.createElement("div");
-  const comments = document.createElement("div");
-  const img = document.createElement("img");
+for (let i = 0; i < commentsBtns.length; i++) {
+  commentsBtns[i].addEventListener("click", function () {
+    const commentsWrapper = document.createElement("div");
+    const comments = document.createElement("div");
+    const img = document.createElement("img");
 
-  commentsWrapper.className = "commentsWrapper";
-  comments.className = "chatBox comments";
-  comments.innerHTML = `<span class="bold">justcode_bootcamp</span> ${e.value}`;
-  img.className = "commentsHeart";
-  img.src = "img/heart.png";
+    commentsWrapper.className = "commentsWrapper";
+    comments.className = "chatBox comments";
+    comments.innerHTML = `<span class="bold">justcode_bootcamp</span> ${commentsInputs[i].value}`;
+    img.className = "commentsHeart";
+    img.src = "img/heart.png";
 
-  commentsWrapper.append(comments);
-  commentsWrapper.append(img);
-  commentsBox.append(commentsWrapper);
+    commentsWrapper.append(comments);
+    commentsWrapper.append(img);
+    commentsBoxes[i].append(commentsWrapper);
 
-  commentsInput.value = "";
+    commentsInputs[i].value = "";
+  });
 }
-
-commentsBtn.addEventListener("click", function () {
-  leaveComments(commentsInput);
-});
