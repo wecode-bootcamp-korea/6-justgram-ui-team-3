@@ -1,0 +1,139 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-color: #EFEFEF;
+}
+
+/* //상단 nav css 코드 */
+.nav-container {
+  border: 1px solid lightgray;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 60px;
+  background-color: white;
+}
+
+.logo-text {
+  font-family: "Lobster", cursive;
+  font-size: 24px;
+}
+
+.center-wrapper {
+  border-radius: 7px;
+  background-color: #EFEFEF;
+  padding: 8px 10px;
+}
+
+.search-box {
+  display: flex;
+  align-items: center;
+  width: 250px;
+}
+
+.search-text {
+  color: gray;
+  font-size: 15px;
+  padding: 0 4px;
+}
+
+.search-input {
+  border: none;
+  background-color: #EFEFEF;
+}
+
+.search-input:focus {
+  outline: none;
+}
+
+.icon-box {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.icon-box img {
+  width: 25px;
+  margin: 7px;
+}
+/* 상단 nav css 코드 끝 */
+
+/* feed css 코드 */
+.feed-container {
+  display: flex;
+  padding: 0 18%
+}
+
+.feed-whole-wrapper {
+  border: 1px solid lightgray;
+  background-color: white;
+  width: 470px;
+  margin-top: 30px;
+  border-radius: 10px;
+}
+
+.feed-header-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 58px;
+}
+
+.profile-box {
+  padding: 8px 10px 6px;
+  display: flex;
+  align-items: center;
+}
+
+.profile-img {
+  width: 38px;
+  height:38px;
+  border-radius: 70%;
+  border: 1px solid lightgray;
+  overflow: hidden;
+  margin-right: 10px;
+}
+
+profile-id {
+  font-weight: bold;
+}
+
+.menu-box {
+  padding-right: 20px;
+}
+
+.menu-box img {
+  width: 20px;
+  
+}
+
+.feed-photo-wrapper img {
+  width: 100%;
+  
+}
+
+.feed-comment-wrapper {
+  display: flex;
+}
+
+.comment-icon-wrapper {
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.icon-box {
+  display: flex;
+}
+
+.comment-icon-wrapper img{
+  width: 23px;
+}
+
+.save-icon {
+  padding-top: 4px;
+  padding-right: 8px;
+}
