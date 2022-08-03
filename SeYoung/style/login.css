@@ -26,6 +26,8 @@ body {
   font-family: "Lobster", cursive;
   font-size: 48px;
 }
+.form-wrapper {
+}
 
 .login-wrapper {
   background-color: rgb(244, 241, 241);

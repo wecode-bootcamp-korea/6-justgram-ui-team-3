@@ -29,7 +29,7 @@ function listener() {
 //     loginButton.disabled = true;
 //   } else if (emailForm.indexof("@")>=0 && passwordForm.length >=5)
 // }
-
+const loginFormById = document.getElementById("login-form");
 const inputIDByID = document.getElementById("email-input-box");
 const inputPWbyID = document.getElementById("password-input-box");
 const loginButtonByID = document.getElementById("button-login");
@@ -51,7 +51,7 @@ function onInput(event) {
 
 inputIDByID.addEventListener("input", onInput);
 inputPWbyID.addEventListener("input", onInput);
-loginButtonByID.addEventListener("click", (event) => {
+loginFormById.addEventListener("submit", (event) => {
   event.preventDefault(); //해당 기능을 꺼버리고
   // 커스텀 로직
 });
