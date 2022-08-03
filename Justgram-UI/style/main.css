@@ -4,7 +4,7 @@
 
 body {
   margin: 0;
-  background-color: #EFEFEF;
+  background-color: #efefef;
 }
 
 /* //상단 nav css 코드 */
@@ -24,7 +24,7 @@ body {
 
 .center-wrapper {
   border-radius: 7px;
-  background-color: #EFEFEF;
+  background-color: #efefef;
   padding: 8px 10px;
 }
 
@@ -42,7 +42,7 @@ body {
 
 .search-input {
   border: none;
-  background-color: #EFEFEF;
+  background-color: #efefef;
 }
 
 .search-input:focus {
@@ -64,7 +64,7 @@ body {
 /* feed css 코드 */
 .feed-container {
   display: flex;
-  padding: 0 18%
+  padding: 0 18%;
 }
 
 .feed-whole-wrapper {
@@ -90,15 +90,11 @@ body {
 
 .profile-img {
   width: 38px;
-  height:38px;
+  height: 38px;
   border-radius: 70%;
   border: 1px solid lightgray;
   overflow: hidden;
   margin-right: 10px;
-}
-
-profile-id {
-  font-weight: bold;
 }
 
 .menu-box {
@@ -107,33 +103,133 @@ profile-id {
 
 .menu-box img {
   width: 20px;
-  
 }
 
-.feed-photo-wrapper img {
+.feed-photo {
   width: 100%;
-  
 }
 
 .feed-comment-wrapper {
   display: flex;
 }
 
-.comment-icon-wrapper {
+.comment-icon-box {
   display: flex;
   justify-content: space-between;
-
 }
 
 .icon-box {
   display: flex;
+  margin-left: 2px;
 }
 
-.comment-icon-wrapper img{
+.comment-icon-box img {
   width: 23px;
 }
 
 .save-icon {
   padding-top: 4px;
   padding-right: 8px;
+}
+
+.like-comment-box {
+  display: flex;
+  align-items: center;
+  padding-top: 10px;
+}
+
+.like-profile-img {
+  width: 20px;
+  height: 20px;
+  object-fit: contain;
+  border-radius: 70%;
+  overflow: hidden;
+  margin: 0 3px 1px 10px;
+}
+
+.like-profile-text {
+  font-size: 14px;
+  text-align: center;
+}
+
+.like-profile-text span {
+  font-weight: bold;
+}
+
+.comment-text-box li {
+  list-style-type: none;
+  padding-bottom: 3px;
+}
+
+.comment-text-box p {
+  font-size: 14px;
+  height: 22px;
+  display: inline;
+}
+
+.id,
+.comment-text-box span {
+  margin: 0 0 0 10px;
+  font-size: 14px;
+  font-weight: bold;
+  margin-right: 3px;
+}
+
+.minute {
+  font-size: 12px;
+  color: grey;
+  margin: 8px 0 10px 10px;
+}
+
+.feed-text {
+  display: flex;
+  margin-top: 8px;
+  margin-left: 10px;
+}
+
+.feed-text div {
+  font-size: 14px;
+  margin-right: 3px;
+  margin-bottom: 10px;
+}
+
+.profile-id {
+  font-weight: bold;
+}
+
+.plus-content {
+  color: grey;
+}
+
+.comment-input {
+  border-top: 1px solid lightgray;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.upload-id-input,
+.upload-comment-input {
+  border: none;
+  height: 30px;
+}
+
+.upload-id-input:focus,
+.upload-comment-input:focus {
+  outline: none;
+}
+
+.upload-id-input {
+  width: 70px;
+}
+
+.upload-comment-input {
+  width: 65%;
+}
+
+.upload-btn {
+  border: none;
+  background-color: white;
+  font-weight: bold;
+  color: rgba(100, 148, 237, 0.655);
 }
