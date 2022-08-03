@@ -1,9 +1,9 @@
-import getData from './getData.js';
+import { getFeedData } from './getData.js';
 
-const loadList = async () => {
+(async () => {
   const skeleton = document.getElementById('skeleton');
   const feedUl = document.querySelector('ul.feed');
-  const feedDataList = await (await getData()).json();
+  const feedDataList = await (await getFeedData()).json();
 
   feedDataList.forEach(feedData => {
     const feedList = document.createElement('li');
@@ -61,11 +61,49 @@ const loadList = async () => {
       e.target.comment.value = '';
     });
   });
-};
+})();
 
-loadList();
+window.addEventListener('click', ({ target }) => {
+  const searchContainer = document.querySelector('div.searchContainer');
+  if (target.closest('input#search')) {
+    searchContainer.style.visibility = 'visible';
+    searchContainer.style.opacity = 1;
+  } else if (!target.closest('div.searchContainer') && !target.closest('input#search')) {
+    searchContainer.style.visibility = 'hidden';
+    searchContainer.style.opacity = 0;
+  }
+});
 
+let timeoutId;
 const searchInput = document.querySelector('input#search');
+const loadDiv = document.querySelector('div.loading');
 
-if (searchInput instanceof HTMLInputElement) {
-}
+searchInput.addEventListener('input', ({ target: { value } }) => {
+  loadDiv.style.visibility = 'visible';
+  loadDiv.innerHTML = 'Loading...';
+  clearTimeout(timeoutId);
+
+  const searchUl = document.querySelector('ul.searchList');
+  searchUl.querySelectorAll('li').forEach(li => {
+    li.remove();
+  });
+
+  timeoutId = setTimeout(async () => {
+    const profileDatas = await (await fetch('../data/profiles.json')).json();
+    const filteredDatas = profileDatas.filter(data => data.displayName.includes(value));
+
+    filteredDatas.forEach(({ displayName, name }) => {
+      const searchLi = document.createElement('li');
+      searchLi.innerHTML = `
+      <p>${displayName}</p>
+      <p>${name}</p>
+      `;
+      loadDiv.style.visibility = 'hidden';
+      searchUl.appendChild(searchLi);
+    });
+
+    if (!filteredDatas.length) {
+      loadDiv.innerHTML = '검색결과 없음';
+    }
+  }, 600);
+});
