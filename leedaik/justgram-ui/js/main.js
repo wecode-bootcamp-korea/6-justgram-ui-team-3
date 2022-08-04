@@ -1,8 +1,36 @@
 import { getFeedData } from './getData.js';
 
 (async () => {
-  const skeleton = document.getElementById('skeleton');
   const feedUl = document.querySelector('ul.feed');
+  const feedContainer = document.querySelector('div.feedContainer');
+
+  const skeletonUl = document.createElement('ul');
+  skeletonUl.id = 'skeleton';
+  skeletonUl.classList.add('skeleton');
+  skeletonUl.innerHTML = `
+  <li>
+    <div class="title"></div>
+    <div class="image"></div>
+    <div class="skComment">
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+    <div class="input"></div>
+  </li>
+  <li>
+    <div class="title"></div>
+    <div class="image"></div>
+    <div class="skComment">
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+    <div class="input"></div>
+  </li>
+  `;
+  feedContainer.appendChild(skeletonUl);
+
   const feedDataList = await (await getFeedData()).json();
 
   feedDataList.forEach(feedData => {
@@ -39,7 +67,7 @@ import { getFeedData } from './getData.js';
     </div>
     `;
 
-    skeleton.remove();
+    skeletonUl.remove();
     feedUl.appendChild(feedList);
   });
 
