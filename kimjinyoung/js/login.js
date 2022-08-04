@@ -1,6 +1,7 @@
 const id = document.querySelector(".id");
 const pw = document.querySelector(".password");
 const btn = document.querySelector(".button");
+const form = document.querySelector(".form");
 
 function btnOnOff() {
   if (id.value || pw.value) {
@@ -18,3 +19,7 @@ function btnOnOff() {
 id.addEventListener("keyup", btnOnOff);
 
 pw.addEventListener("keyup", btnOnOff);
+
+form.addEventListener("submit", function (e) {
+  e.preventDefault();
+});

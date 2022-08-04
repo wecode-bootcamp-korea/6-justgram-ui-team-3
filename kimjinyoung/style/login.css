@@ -14,13 +14,13 @@ body {
 }
 
 #loginContainer {
-  border: 1px solid rgb(219, 219, 219);
   flex-direction: column;
-  height: 400px;
   width: 250px;
-  text-align: center;
+  height: 400px;
   padding: 20px 60px;
   background-color: white;
+  border: 1px solid rgb(219, 219, 219);
+  text-align: center;
 }
 
 .title {
@@ -29,10 +29,11 @@ body {
 }
 
 .loginInput {
+  width: 250px;
+
   height: 35px;
   border: 1px solid rgb(219, 219, 219);
   border-radius: 3.5px;
-  width: 250px;
 }
 
 .id {
@@ -46,13 +47,13 @@ body {
 }
 
 .button {
-  background-color: rgb(178, 223, 252);
-  border-radius: 5px;
-  margin: 0 0 100px 0;
-  color: white;
-  font-size: 16px;
   width: 100%;
-  border: none;
   height: 37.5px;
+  margin: 0 0 100px 0;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  background-color: rgb(178, 223, 252);
+  font-size: 16px;
   cursor: not-allowed;
 }
