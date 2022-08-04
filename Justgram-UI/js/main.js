@@ -1,42 +1,75 @@
-const uploadBtn = document.querySelector(".upload-btn");
-const uploadIdInput = document.querySelector(".upload-id-input");
-const uploadCmInput = document.querySelector(".upload-comment-input");
+const uploadBtn = document.querySelectorAll(".upload-btn");
+const uploadIdInput = document.getElementsByClassName("upload-id-input");
+const uploadCmInput = document.getElementsByClassName("upload-comment-input");
+const totalInput = document.getElementsByClassName("comment-input");
 
-function uploadComment(idContent, commentContent) {
-  commentContent = uploadCmInput.value;
-  idContent = uploadIdInput.value;
+console.log(Array.from(uploadCmInput));
 
-  //댓글 내용 업로드//
-  const uploadCommentSpace = document.querySelector(".comment-text-box");
-  const li = document.createElement("li");
+Array.from(uploadBtn).forEach((button, index) => {
+  button.addEventListener("click", () => {
+    const commentContent = uploadCmInput[index].value;
+    const idContent = uploadIdInput[index].value;
 
-  const id = document.createElement("span");
-  id.innerHTML = idContent;
+    if (idContent !== "" && commentContent !== "") {
+      //댓글 내용 업로드//
+      const uploadCommentSpace =
+        document.getElementsByClassName("comment-text-box");
+      const li = document.createElement("li");
 
-  const comment = document.createElement("p");
-  comment.innerHTML = commentContent;
+      const id = document.createElement("span");
+      id.innerHTML = idContent;
 
-  li.append(id, comment);
-  uploadCommentSpace.appendChild(li);
+      const comment = document.createElement("p");
+      comment.innerHTML = commentContent;
 
-  uploadIdInput.value = "";
-  uploadCmInput.value = "";
-}
+      li.append(id, comment);
+      uploadCommentSpace[index].appendChild(li);
 
-uploadBtn.addEventListener("click", () => {
-  if (uploadIdInput.value.length > 0 && uploadCmInput.value.length > 0) {
-    uploadComment();
-  }
-});
-
-uploadCmInput.addEventListener("keyup", (e) => {
-  if (e.keyCode === 13) {
-    if (uploadIdInput.value.length > 0 && uploadCmInput.value.length > 0) {
-      uploadComment();
-      console.log("enter push");
+      uploadIdInput[index].value = "";
+      uploadCmInput[index].value = "";
     }
-  }
+  });
 });
 
+Array.from(totalInput).forEach((input, index) => {
+  input.addEventListener("keyup", (e) => {
+    const commentContent = uploadCmInput[index].value;
+    const idContent = uploadIdInput[index].value;
 
-console.dir(uploadIdInput);
+    if (e.keyCode === 13) {
+      if (idContent !== "" && commentContent !== "") {
+        //댓글 내용 업로드//
+        const uploadCommentSpace =
+          document.getElementsByClassName("comment-text-box");
+        const li = document.createElement("li");
+
+        const id = document.createElement("span");
+        id.innerHTML = idContent;
+
+        const comment = document.createElement("p");
+        comment.innerHTML = commentContent;
+
+        li.append(id, comment);
+        uploadCommentSpace[index].appendChild(li);
+
+        uploadIdInput[index].value = "";
+        uploadCmInput[index].value = "";
+      }
+    }
+  });
+});
+// uploadCmInput.addEventListener("keyup", (e) => {
+//   if (e.keyCode === 13) {
+//     if (uploadIdInput.value.length > 0 && uploadCmInput.value.length > 0) {
+//       uploadComment();
+//       console.log("enter push");
+//     }
+//   }
+// });
+
+// console.dir(uploadIdInput);
+// array.forEach(element => {
+
+// });
+
+// if (uploadIdInput[i].value.length !== "" && uploadCmInput[i].value.length !== "")
