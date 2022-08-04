@@ -1,0 +1,85 @@
+.nav_flexbox {
+  height: 57px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.insta_style {
+  width: 35px;
+  height: 35px;
+}
+.logo_style {
+  font-family: "Lobster", cursive;
+  font-size: 35px;
+}
+.secrch_icon {
+  position: relative;
+  left: 30px;
+  width: 15px;
+  color: lightgray;
+}
+.input_wrapper {
+  padding-left: 40px;
+  background-color: #efefef;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 0px;
+  width: 268px;
+  height: 36px;
+}
+article {
+  width: 500px;
+  display: column;
+}
+
+.top_wrapper {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  margin: 10px;
+}
+
+.icon_flex {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+.proflie_container {
+  width: 470px;
+  height: 56px;
+  border: 1px solid lightgray;
+}
+.follower_proflie_box {
+  width: 66px;
+  height: 66px;
+  border-radius: 70%;
+  overflow: hidden;
+}
+
+.follower_proflie_style {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.proflie_box {
+  width: 42px;
+  height: 42px;
+  border-radius: 70%;
+  overflow: hidden;
+}
+.like_style {
+  margin: 10px;
+}
+.comment_btn {
+  width: 400px;
+  height: 18px;
+  border: none;
+  padding: 10px;
+}
+.posting {
+  position: relative;
+  right: 50p;
+  color: #aeddf3;
+  text-decoration: none;
+}
