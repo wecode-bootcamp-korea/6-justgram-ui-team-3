@@ -1,34 +1,3 @@
-/*const emailForm = document.getElementById("email-input-box");
-const passwordForm = document.getElementById("password-input-box");
-const loginButton = document.getElementById("button-login");
-
-emailForm.addEventListener("keyup", listener);
-passwordForm.addEventListener("keyup", listener);
-
-function listener() {
-  switch (!(emailForm.value && passwordForm.value)) {
-    case true:
-      loginButton.disabled = true;
-      break;
-    case false:
-      loginButton.disabled = false;
-      break;
-  }
-}*/
-
-// function listener() {
-//   if (!(emailForm.value && passwordForm.value)) {
-//     loginButton.disabled = true;
-//   } else {
-//     loginButton.disabled = false;
-//   }
-// }
-
-// function listener() {
-//   if (emailForm.indexof("@") === -1 || passwordForm.length < 5); {
-//     loginButton.disabled = true;
-//   } else if (emailForm.indexof("@")>=0 && passwordForm.length >=5)
-// }
 const loginFormById = document.getElementById("login-form");
 const inputIDByID = document.getElementById("email-input-box");
 const inputPWbyID = document.getElementById("password-input-box");
