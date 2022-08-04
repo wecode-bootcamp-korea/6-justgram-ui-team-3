@@ -210,6 +210,7 @@ main div.feedContainer ul.feed > li div.feedComment ul.commentList {
 
 main div.feedContainer ul.feed > li div.feedComment ul.commentList li {
   margin-bottom: 10px;
+  position: relative;
 }
 
 main div.feedContainer ul.feed > li div.feedComment ul.commentList li p {
@@ -217,6 +218,16 @@ main div.feedContainer ul.feed > li div.feedComment ul.commentList li p {
   word-break: break-all;
   display: flex;
   gap: 10px;
+}
+
+main div.feedContainer ul.feed > li div.feedComment ul.commentList li button {
+  position: absolute;
+  right: 0;
+  top: 0;
+  border: none;
+  background: transparent;
+  margin: 0;
+  padding: 0;
 }
 
 main div.feedContainer ul.feed > li div.feedComment form {

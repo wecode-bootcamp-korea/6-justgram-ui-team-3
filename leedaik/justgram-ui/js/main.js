@@ -56,7 +56,14 @@ import { getFeedData } from './getData.js';
         ${feedData.commentList
           .map(
             ({ commentName, commentContent }) => `
-          <li><p><strong>${commentName}</strong>${commentContent}</p></li>`
+          <li>
+            <p><strong>${commentName}</strong>${commentContent}</p>
+            <button>
+              <span class="material-symbols-outlined">
+              close
+              </span>
+            </button>
+          </li>`
           )
           .join('')}
       </ul>
@@ -77,8 +84,20 @@ import { getFeedData } from './getData.js';
   const writeComment = (content, writer, index) => {
     if (content) {
       const commentLiElement = document.createElement('li');
-      commentLiElement.innerHTML = `<p><strong>${writer}</strong> ${content}</p>`;
+      commentLiElement.innerHTML = `
+      <p>
+        <strong>${writer}</strong> ${content} 
+        <button>
+          <span class="material-symbols-outlined">
+          close
+          </span>
+        </button>
+      </p>`;
       commentList[index].appendChild(commentLiElement);
+
+      commentLiElement.querySelector('button').addEventListener('click', ({ currentTarget }) => {
+        currentTarget.closest('ul.commentList > li').remove();
+      });
     }
   };
 
@@ -87,6 +106,13 @@ import { getFeedData } from './getData.js';
       e.preventDefault();
       writeComment(e.target.comment.value, '닉네임', i);
       e.target.comment.value = '';
+    });
+  });
+
+  const removeBtn = document.querySelectorAll('ul.commentList > li > button');
+  removeBtn.forEach(e => {
+    e.addEventListener('click', ({ currentTarget }) => {
+      currentTarget.closest('ul.commentList > li').remove();
     });
   });
 })();
