@@ -4,7 +4,8 @@ body {
   display: flex;
   justify-content: center;
 }
-body header {
+
+header {
   background-color: white;
   border-bottom: 1px solid gray;
   position: fixed;
@@ -16,7 +17,8 @@ body header {
   justify-content: center;
   z-index: 10;
 }
-body header div.container {
+
+header div.container {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -24,7 +26,8 @@ body header div.container {
   width: 100%;
   position: relative;
 }
-body header div.container > a {
+
+header div.container > a {
   margin: 0;
   font-family: 'Lobster', cursive;
   font-size: 24px;
@@ -36,7 +39,8 @@ body header div.container > a {
   text-decoration: none;
   color: black;
 }
-body header div.container > a::after {
+
+header div.container > a::after {
   content: '';
   position: absolute;
   left: 52px;
@@ -45,7 +49,8 @@ body header div.container > a::after {
   height: 100%;
   background-color: black;
 }
-body header div.container input {
+
+header div.container input {
   padding: 4px;
   padding: 10px;
   width: 260px;
@@ -53,10 +58,12 @@ body header div.container input {
   background-color: rgb(231, 231, 231);
   border-radius: 10px;
 }
-body header div.container input:focus {
+
+header div.container input:focus {
   outline: none;
 }
-body header div.container div.searchContainer {
+
+header div.container div.searchContainer {
   position: absolute;
   left: calc(50% - 180px);
   top: calc(100% + 14px);
@@ -72,74 +79,88 @@ body header div.container div.searchContainer {
   visibility: hidden;
   opacity: 0;
 }
-body header div.container div.searchContainer div.loading {
+
+header div.container div.searchContainer div.loading {
   position: absolute;
   width: 100%;
   text-align: center;
   padding: 10px 0;
   visibility: visible;
 }
-body header div.container div.searchContainer ul {
+
+header div.container div.searchContainer ul {
   padding: 0;
   list-style: none;
   margin: 0;
 }
-body header div.container div.searchContainer li {
+
+header div.container div.searchContainer li {
   padding: 20px;
   border-bottom: 1px solid lightgray;
 }
-body header div.container div.searchContainer li p {
+
+header div.container div.searchContainer li p {
   margin: 0;
 }
-body header div.container div.searchContainer li p:first-of-type {
+
+header div.container div.searchContainer li p:first-of-type {
   font-weight: bold;
 }
-body header div.container > ul {
+
+header div.container > ul {
   display: flex;
   list-style: none;
   padding: 0;
   margin: 0;
   gap: 30px;
 }
-body main {
+
+main {
   margin-top: 120px;
   max-width: 1100px;
   width: 100%;
   display: flex;
   gap: 40px;
 }
-body main div.feedContainer {
+
+main div.feedContainer {
   width: 60%;
 }
-body main div.feedContainer ul.feed {
+
+main div.feedContainer ul.feed {
   padding: 0;
   list-style: none;
   margin: 0;
 }
-body main div.feedContainer ul.feed > li {
+
+main div.feedContainer ul.feed > li {
   margin-bottom: 30px;
   background-color: white;
   overflow: hidden;
   border-radius: 10px;
   border: 1px solid lightgray;
 }
-body main div.feedContainer ul.feed > li div.feedHeader {
+
+main div.feedContainer ul.feed > li div.feedHeader {
   display: flex;
   align-items: center;
   gap: 10px;
   padding: 20px;
 }
-body main div.feedContainer ul.feed > li div.feedHeader div.profileContainer {
+
+main div.feedContainer ul.feed > li div.feedHeader div.profileContainer {
   width: 32px;
   height: 32px;
   overflow: hidden;
   border-radius: 16px;
 }
-body main div.feedContainer ul.feed > li div.feedHeader h3 {
+
+main div.feedContainer ul.feed > li div.feedHeader h3 {
   margin: 0;
   width: 90%;
 }
-body main div.feedContainer ul.feed > li div.feedHeader button {
+
+main div.feedContainer ul.feed > li div.feedHeader button {
   display: block;
   border: none;
   background-color: transparent;
@@ -147,10 +168,12 @@ body main div.feedContainer ul.feed > li div.feedHeader button {
   padding: 0;
   width: 30px;
 }
-body main div.feedContainer ul.feed > li > img {
+
+main div.feedContainer ul.feed > li > img {
   width: 100%;
 }
-body main div.feedContainer ul.feed > li ul.feedMenus {
+
+main div.feedContainer ul.feed > li ul.feedMenus {
   border-bottom: 1px solid lightgray;
   padding: 20px;
   display: flex;
@@ -160,48 +183,59 @@ body main div.feedContainer ul.feed > li ul.feedMenus {
   gap: 10px;
   position: relative;
 }
-body main div.feedContainer ul.feed > li ul.feedMenus li {
+
+main div.feedContainer ul.feed > li ul.feedMenus li {
   display: flex;
   align-items: center;
 }
-body main div.feedContainer ul.feed > li ul.feedMenus li span {
+
+main div.feedContainer ul.feed > li ul.feedMenus li span {
   font-size: 30px;
 }
-body main div.feedContainer ul.feed > li ul.feedMenus li:last-of-type {
+
+main div.feedContainer ul.feed > li ul.feedMenus li:last-of-type {
   position: absolute;
   right: 20px;
 }
-body main div.feedContainer ul.feed > li div.feedComment {
+
+main div.feedContainer ul.feed > li div.feedComment {
   padding: 20px;
 }
-body main div.feedContainer ul.feed > li div.feedComment ul.commentList {
+
+main div.feedContainer ul.feed > li div.feedComment ul.commentList {
   list-style: none;
   padding: 0;
   margin: 0;
 }
-body main div.feedContainer ul.feed > li div.feedComment ul.commentList li {
+
+main div.feedContainer ul.feed > li div.feedComment ul.commentList li {
   margin-bottom: 10px;
 }
-body main div.feedContainer ul.feed > li div.feedComment ul.commentList li p {
+
+main div.feedContainer ul.feed > li div.feedComment ul.commentList li p {
   margin: 0;
   word-break: break-all;
   display: flex;
   gap: 10px;
 }
-body main div.feedContainer ul.feed > li div.feedComment form {
+
+main div.feedContainer ul.feed > li div.feedComment form {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
-body main div.feedContainer ul.feed > li div.feedComment form input {
+
+main div.feedContainer ul.feed > li div.feedComment form input {
   border: none;
   width: 90%;
   font-size: 18px;
 }
-body main div.feedContainer ul.feed > li div.feedComment form input:focus {
+
+main div.feedContainer ul.feed > li div.feedComment form input:focus {
   outline: none;
 }
-body main div.feedContainer ul.feed > li div.feedComment form button {
+
+main div.feedContainer ul.feed > li div.feedComment form button {
   border: none;
   margin: 0;
   padding: 0;
@@ -210,44 +244,52 @@ body main div.feedContainer ul.feed > li div.feedComment form button {
   font-weight: 700;
   font-size: 18px;
 }
-body main div.feedContainer ul.skeleton {
+
+main div.feedContainer ul.skeleton {
   padding: 0;
   margin: 0;
   width: 100%;
   list-style: none;
 }
-body main div.feedContainer ul.skeleton li {
+
+main div.feedContainer ul.skeleton li {
   background-color: white;
   border-radius: 10px;
   padding: 20px 0;
   margin-bottom: 30px;
   border: 1px solid lightgray;
 }
-body main div.feedContainer ul.skeleton li div.title {
+
+main div.feedContainer ul.skeleton li div.title {
   height: 30px;
   width: 200px;
   margin: 0 20px;
   background-color: lightgray;
 }
-body main div.feedContainer ul.skeleton li div.image {
+
+main div.feedContainer ul.skeleton li div.image {
   height: 400px;
   background-color: lightgray;
   margin: 20px 0;
 }
-body main div.feedContainer ul.skeleton li div.skComment {
+
+main div.feedContainer ul.skeleton li div.skComment {
   padding: 20px;
 }
-body main div.feedContainer ul.skeleton li div.skComment > div {
+
+main div.feedContainer ul.skeleton li div.skComment > div {
   height: 20px;
   margin-bottom: 20px;
   background-color: lightgray;
 }
-body main div.feedContainer ul.skeleton li div.input {
+
+main div.feedContainer ul.skeleton li div.input {
   height: 30px;
   background-color: lightgray;
   margin: 0 20px;
 }
-body main aside {
+
+main aside {
   width: calc(40% - 40px);
   border: 1px solid black;
   height: 400px;
