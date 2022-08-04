@@ -14,9 +14,11 @@ body {
 /* ---nav--- */
 #nav {
   justify-content: space-around;
+  width: 100%;
   padding: 12px;
   background-color: white;
   border-bottom: 1px solid rgb(219, 219, 219);
+  position: fixed;
 }
 
 .navLogo {
@@ -73,6 +75,10 @@ body {
   background-color: white;
   border-radius: 8px;
   border: 1px solid rgb(219, 219, 219);
+}
+
+.article:nth-of-type(1) {
+  margin-top: 77px;
 }
 
 .articleTop {
