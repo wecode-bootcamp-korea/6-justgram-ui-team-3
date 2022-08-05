@@ -9,14 +9,14 @@ fetch("./data/feedData.json")
       article.className = "article";
       article.innerHTML = `
       <div class="articleTop flexCenter">
-      <div class="flexCenter">
-        <img src="${feedData.articleProfile}" alt="profile image" class="articleProfile flexCenter">
-        <span class="articleIdTop articleId bold">${feedData.articleId}</span>
+        <div class="flexCenter">
+          <img src="${feedData.articleProfile}" alt="profile image" class="articleProfile flexCenter">
+          <span class="articleIdTop articleId bold">${feedData.articleId}</span>
+        </div>
+        <div>
+          <img src="img/more.png" alt="more" class="articleMore">
+        </div>
       </div>
-      <div>
-        <img src="img/more.png" alt="more" class="articleMore">
-      </div>
-    </div>
     
     <img src="${feedData.articleImg}" alt="article image" class="articleImg">
     
@@ -39,13 +39,6 @@ fetch("./data/feedData.json")
         <div class="chatBox writer">
           <span class="bold articleId">${feedData.articleId}</span> <span class="articleText">${feedData.articleText}</span>
         </div>
-    
-        <div class="commentWrapper">
-          <div class="chatBox comment">
-            <span class="bold commentId">${feedData.commentId}</span> <span class="commentText">${feedData.comment}</span>
-          </div>
-          <img src="img/heart.png" alt="heart" class="commentHeart">
-        </div>
       </div>
     
       <div class="commentInputWrapper flexCenter">
@@ -58,11 +51,26 @@ fetch("./data/feedData.json")
     `;
       section.append(article);
 
-      // === 댓글 추가 로직 === //
+      // === 댓글 가져오기 == //
+
+      const commentBoxes = document.querySelectorAll(".commentBox");
+
+      for (let j = 0; j < feedData.comment.length; j++) {
+        const commentWrapper = document.createElement("div");
+        commentWrapper.className = "commentWrapper";
+        commentWrapper.innerHTML = `
+          <div class="chatBox comment">
+            <span class="bold commentId">${feedData.comment[j].commentId}</span> <span class="commentText">${feedData.comment[j].commentText}</span>
+          </div>
+          <img src="img/heart.png" alt="heart" class="commentHeart">
+        `;
+        commentBoxes[i].append(commentWrapper);
+      }
+
+      // === 댓글 달기 로직 === //
 
       const commentBtns = document.querySelectorAll(".commentBtn");
       const commentInputs = document.querySelectorAll(".commentInput");
-      const commentBoxes = document.querySelectorAll(".commentBox");
 
       commentBtns[i].addEventListener("click", function () {
         const commentWrapper = document.createElement("div");
