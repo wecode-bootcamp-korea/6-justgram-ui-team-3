@@ -32,6 +32,7 @@ import { getFeedData } from './getData.js';
   feedContainer.appendChild(skeletonUl);
 
   const feedDataList = await (await getFeedData()).json();
+  console.log(feedDataList);
 
   feedDataList.forEach(feedData => {
     const feedList = document.createElement('li');
@@ -160,4 +161,13 @@ searchInput.addEventListener('input', ({ target: { value } }) => {
       loadDiv.innerHTML = '검색결과 없음';
     }
   }, 600);
+});
+
+const profileBtn = document.querySelector('#profile');
+const profileMenu = document.querySelector('div.profile-menu');
+
+profileBtn.addEventListener('click', () => {
+  if (profileMenu instanceof HTMLDivElement) {
+    profileMenu.classList.toggle('visible');
+  }
 });
