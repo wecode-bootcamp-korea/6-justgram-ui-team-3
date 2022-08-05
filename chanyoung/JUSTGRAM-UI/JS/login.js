@@ -8,6 +8,7 @@ const loginbtnbyid = document.getElementById('loginbutton')
 console.log('test', inputIdbycs)
 console.log('test', inputPwbycs)
 console.log('test', loginbtnbyid)
+
 function onInput() {
   const id = inputIdbycs.value
   const pw = inputPwbycs.value
