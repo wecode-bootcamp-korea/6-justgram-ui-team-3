@@ -93,7 +93,7 @@ body {
   border-radius: 20px;
 }
 
-.articleId {
+.articleIdTop {
   margin-left: 15px;
 }
 
@@ -122,10 +122,18 @@ body {
   height: 25px;
 }
 
+.writer {
+  word-break: break-all;
+}
+
 .chatBox {
   width: 430px;
   margin: 0 10px 5px 10px;
   font-size: 14px;
+}
+
+.comment {
+  word-break: break-all;
 }
 
 .like {

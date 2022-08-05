@@ -9,7 +9,7 @@ function btnOnOff() {
     btn.style.backgroundColor = "rgb(178, 223, 252)";
     btn.style.cursor = "not-allowed";
   }
-  if (id.value && pw.value) {
+  if (id.value.includes("@") && pw.value.length > 5) {
     btn.disabled = false;
     btn.style.backgroundColor = "rgb(0, 149, 246)";
     btn.style.cursor = "pointer";
