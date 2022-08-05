@@ -20,19 +20,31 @@ Array.from(commentWriteButton).forEach((button, index) => {
 });
 
 // feed mock data fetch 후 댓글 출력
-const uploadedComments = document.getElementById("uploaded-comments");
-let comments_list;
+const uploadedComments = document.getElementsByClassName("feed-comment-list");
 
-fetch("data/comments.json", {
-  method: "GET",
-})
-  .then((res) => res.json()) // res를 받아서 res데이터를 json형식으로 바꿈
+fetch("./data/comments.json")
+  // res를 받아서 res데이터를 json형식으로 바꿈
+  .then((res) => res.json())
   .then((data) => {
-    comments_list = data.comments; //Json파일의 comments 안에 배열만 따로 할당
+    //데이터를 받아서 배열로 다시 할당하기
+    let comments_list = data.comments;
+
+    //배열에 담긴 댓글 하나하나 반복문 돌기
     comments_list.forEach((comment) => {
-      const li = document.createElement("li");
-      li.innerText = comment.content;
-      uploadedComments.append(li);
+      //먼저 uploadedComments 반복문 돌면서 피드 하나하나에 댓글 하나씩 넣어주기
+      for (let i = 0; i < comments_list.length; i++) {
+        //댓글 넣을 div
+        const commentElem = document.createElement("div");
+        //댓글 닉네임 넣을 span
+        const nameSpan = document.createElement("span");
+        nameSpan.className = "comment-id";
+        nameSpan.textContent = comment.id;
+        //댓글 내용을 넣어주기
+        const content = comment.content;
+        commentElem.append(nameSpan, content);
+        //피드 하나하나에 댓글 넣기
+        uploadedComments[i].append(commentElem);
+      }
     });
   });
 

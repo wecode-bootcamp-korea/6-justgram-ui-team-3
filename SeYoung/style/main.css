@@ -146,3 +146,12 @@
   font-weight: bold;
   margin-right: 10px;
 }
+
+.comment-content {
+  display: inline;
+  list-style: none;
+}
+
+.comment-id {
+  font-weight: bold;
+}

@@ -1,24 +1,21 @@
 {
   "comments": [
     {
-      "id": 1,
+      "id": "bibi_the_gang",
       "userName": "비비",
-      "content": "박들이 짜증난다냥",
-      "isLiked": true
+      "content": "박들이 짜증난다냥"
     },
 
     {
-      "id": 2,
+      "id": "deul_the_tiger",
       "userName": "들이",
-      "content": "내가 뭐...",
-      "isLiked": true
+      "content": "내가 뭐..."
     },
 
     {
-      "id": 3,
+      "id": "seeyong_0",
       "userName": "정세영",
-      "content": "싸우지마ㅠ",
-      "isLiked": false
+      "content": "싸우지마ㅠ"
     }
   ]
 }
