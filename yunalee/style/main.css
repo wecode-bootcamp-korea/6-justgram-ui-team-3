@@ -105,6 +105,9 @@
   height: 100%;
 }
 
+.feed_comment_list{
+  padding: 3px
+}
 .padding_10px{
   padding:10px;
 }
@@ -132,63 +135,7 @@
   border: none;
 }
 
-
-
-
-
-
-
-
-.nav_flexbox {
-  height: 57px;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-}
-
-
-.secrch_icon {
-  position: relative;
-  left: 30px;
-  width: 15px;
-  color: lightgray;
-}
-
-article {
-  width: 500px;
-  display: column;
-}
-
-.top_wrapper {
-  display: flex;
-  justify-content: left;
-  align-items: center;
-  margin: 10px;
-}
-
-.icon_flex {
-  display: flex;
-  justify-content: space-between;
-  margin-top: 10px;
-}
-.proflie_container {
-  width: 470px;
-  height: 56px;
-  border: 1px solid lightgray;
-}
-.follower_proflie_box {
-  width: 66px;
-  height: 66px;
-  border-radius: 70%;
-  overflow: hidden;
-}
-
-.follower_proflie_style {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-.like_style {
-  margin: 10px;
+.comment-name{
+  font-weight: bold;
+  margin-right: 10px;
 }
