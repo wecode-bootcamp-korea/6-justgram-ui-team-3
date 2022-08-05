@@ -1,0 +1,24 @@
+{
+  "comments": [
+    {
+      "id": 1,
+      "userName": "비비",
+      "content": "박들이 짜증난다냥",
+      "isLiked": true
+    },
+
+    {
+      "id": 2,
+      "userName": "들이",
+      "content": "내가 뭐...",
+      "isLiked": true
+    },
+
+    {
+      "id": 3,
+      "userName": "정세영",
+      "content": "싸우지마ㅠ",
+      "isLiked": false
+    }
+  ]
+}
