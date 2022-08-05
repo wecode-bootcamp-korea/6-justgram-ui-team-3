@@ -3,8 +3,6 @@ const uploadIdInput = document.getElementsByClassName("upload-id-input");
 const uploadCmInput = document.getElementsByClassName("upload-comment-input");
 const totalInput = document.getElementsByClassName("comment-input");
 
-console.log(Array.from(uploadCmInput));
-
 Array.from(uploadBtn).forEach((button, index) => {
   button.addEventListener("click", () => {
     const commentContent = uploadCmInput[index].value;

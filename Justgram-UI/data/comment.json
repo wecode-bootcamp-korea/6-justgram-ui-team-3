@@ -1,0 +1,20 @@
+[
+  {
+    "id": 1,
+    "userName": "justcode",
+    "content": "예원님 최고예용",
+    "isLiked": true
+  },
+  {
+    "id": 2,
+    "userName": "code Kim",
+    "content": "야 너가 코딩을 그렇게 잘한다며",
+    "isLiked": false
+  },
+  {
+    "id": 3,
+    "userName": "jayPark",
+    "content": "Hey. what's up?",
+    "isLiked": false
+  }
+]

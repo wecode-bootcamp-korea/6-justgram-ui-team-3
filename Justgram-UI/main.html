@@ -104,16 +104,7 @@
             <div class="feed-content">잘 먹고 잘 살자~</div>
             <div class="plus-content">.... 더 보기</div>
           </div>
-          <div class="comment-text-box">
-            <li>
-              <span class="id">h_jin_da_0314</span>
-              <p>잘 먹고 잘 살자!</p>
-            </li>
-            <li>
-              <span class="id">babie0827</span>
-              <p>브라보 마이 라이프</p>
-            </li>
-          </div>
+          <ul class="comment-text-box"></ul>
           <p class="minute">42분 전</p>
           <div class="comment-input">
             <input class="upload-id-input" type="text" placeholder="아이디" />
@@ -181,16 +172,8 @@
             <div class="feed-content">잘 먹고 잘 살자~</div>
             <div class="plus-content">.... 더 보기</div>
           </div>
-          <div class="comment-text-box">
-            <li>
-              <span class="id">h_jin_da_0314</span>
-              <p>잘 먹고 잘 살자!</p>
-            </li>
-            <li>
-              <span class="id">babie0827</span>
-              <p>브라보 마이 라이프</p>
-            </li>
-          </div>
+          <ul class="comment-text-box">
+          </ul>
           <p class="minute">42분 전</p>
           <div class="comment-input">
             <input class="upload-id-input" type="text" placeholder="아이디" />
@@ -258,16 +241,8 @@
             <div class="feed-content">잘 먹고 잘 살자~</div>
             <div class="plus-content">.... 더 보기</div>
           </div>
-          <div class="comment-text-box">
-            <li>
-              <span class="id">h_jin_da_0314</span>
-              <p>잘 먹고 잘 살자!</p>
-            </li>
-            <li>
-              <span class="id">babie0827</span>
-              <p>브라보 마이 라이프</p>
-            </li>
-          </div>
+          <ul class="comment-text-box">
+          </ul>
           <p class="minute">42분 전</p>
           <div class="comment-input">
             <input class="upload-id-input" type="text" placeholder="아이디" />
@@ -281,6 +256,32 @@
         </div>
       </div>
     </section>
+    <script>
+      const comments = document.getElementsByClassName("comment-text-box");
+
+
+      Array.from(comments).forEach((el, index) => {
+
+      let comment_list;
+
+      fetch("/data/comment.json")
+        .then((res) => res.json())
+        .then((data) => {
+          comment_list = data;
+          comment_list.forEach((comment) => {
+            const liElement = document.createElement("li");
+
+            const spanElement = document.createElement("span");
+            spanElement.innerText = comment.userName;
+
+            const pElement = document.createElement("p");
+            pElement.innerText = comment.content;
+            liElement.append(spanElement, pElement);
+            comments[index].appendChild(liElement);
+          });
+        });
+      })
+    </script>
     <script src="/js/main.js"></script>
   </body>
 </html>
