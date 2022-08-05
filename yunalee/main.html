@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>JUSTGRAM_MAIN</title>
     <link rel="stylesheet" href="./style/commom.css" />
-    <link rel="stylesheet" href="style/main.css" />
+    <link rel="stylesheet" href="./style/main.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -15,85 +15,66 @@
     />
   </head>
   <body>
-    <nav class="nav_flexbox">
-      <div>
-        <img class="insta_style" alt="insta_logo" src="./img/instagram.png" />
-        <span class="logo_style"> | Justgram </span>
+    <header class = "to_do header_wrapper">
+      <div class = "vertical_center">
+        <img class="header_icon_style"alt="instagram logo" src="./img/instagram.png">
+        <span class = "header_text">| Justgram</span>
       </div>
-      <div>
-        <img class="secrch_icon" alt="magnifying glass" src="./img/magnifier.png" />
-        <input class="input_wrapper" type="text" placeholder="검색" />
+      <div class = "vertical_center">
+        <img class ="secrch_icon" alt="magnifier" src="./img/magnifier.png">
+        <input class="input_wrapper" placeholder="검색">
       </div>
-      <div>
-        <img alt="compass logo"
-          src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/explore.png"
-        />
-        <img alt="hert logo"
-          src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/heart.png"
-        />
-        <img alt=""
-          src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/profile.png"
-        />
+      <div class="vertical_center">
+        <img class="header_icon_style" alt = "search icon" src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/explore.png">
+        <img class="header_icon_style header_icon_margin" alt = "heart icon"src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/heart.png">
+        <img class="header_icon_style header_icon_margin" alt = "my icon" src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/profile.png">
+      </div> 
+    </header>
+    <nav class ="nav_flex">
+      <div class = "to_do nav_container ">
+        <img class ="follower_proflie_box" alt="ice_buck" src="./img/KakaoTalk_20220803_162128973.jpg">
+        <img class="follower_proflie_box"  alt="anmial crossing fox" src="./img/KakaoTalk_20220803_162128973_01.jpg">
+        <img class="follower_proflie_box"  alt ="chonsik" src="./img/KakaoTalk_20220803_162128973_02.jpg">
+        <img class="follower_proflie_box" alt = "anmial crossing mati"src="./img/KakaoTalk_20220803_162128973_03.jpg">
       </div>
     </nav>
-
-    <article>
-      <div class="top_wrapper">
-        <img
-          class="follower_proflie_box" alt="follw1"
-          src="./img/KakaoTalk_20220803_162128973_03.jpg"
-        />
-        <img
-          class="follower_proflie_box" alt="follw2"
-          src="./img/KakaoTalk_20220803_162128973_01.jpg"
-        />
-        <img
-          class="follower_proflie_box" alt ="follw3"
-          src="./img/KakaoTalk_20220803_162128973_02.jpg"
-        />
-        <img class="follower_proflie_box" src="img/행복해여 펭수.jpg" />
-        <img
-          class="follower_proflie_box" alt="follw4"
-          src="img/KakaoTalk_20220803_162128973.jpg"
-        />
-      </div>
-        <div>
-          <img class="proflie_box" alt= "my proflie" src="./img/IMG_7727.jpg" />
-          <span><b>reveyu5772</b></span>
+    <main class = " contents_wrapper">
+      <div></div>
+      <div class = "feed_container">
+        <div class = "to_do align_horzien">
+          <div>
+            <img class = "poflie_image" alt="proflie_pengsoo" src="./img/IMG_7727.jpg">
+            <span>yureve5772</span>
+          </div>
+          <div>...</div>
         </div>
-      </div>
-      <div class="container">
-        <img
-          src="./img/liudmyla-denysiuk-iJ9o00UeAWk-unsplash.jpg"
-          width="470px"
-        />
-      </div>
-
-      <div class="icon_flex">
-        <div>
-          <img
-            src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/heart.png"
-          />
-          <img src="./img/speech-bubble.png" width="45px" />
-          <img src="./img/plane.png" width="45px" />
+        <div class = "to_do feed_image_wrapper">
+          <img class="feed_image"src="./img/liudmyla-denysiuk-iJ9o00UeAWk-unsplash.jpg">
         </div>
-        <div>
-          <img src="./img/bookmark.png" width="40px" />
+        <div class="to_do feed_menu align_horzien">
+          <div>
+            <img class="main_icon_style" alt="heart_icon" src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/heart.png">
+            <img class="main_icon_style" alt="comment_icon" src="./img/speech-bubble.png">
+            <img class="main_icon_style" alt="message icon" src="./img/plane.png">
+          </div>
+          <div>
+            <img class="main_icon_style" alt="bookmark" src="./img/bookmark.png">
+          </div>
         </div>
-      </div>
-
-      <div class="like_style">좋아요 342개</div>
-      <div class="like_style">
-      <div><b>reve_</b> 너무귀여워요</div>
-      <div><b>som_toto</b>진짜 키우고 싶어요 너무 귀여워★</div>
-      <div><b>yujin_3314</b>아아ㅏㅏㅏㄱ 숨멎 헷쥐</div>
-      </div>
-      <div class="like_style">댓글 31개</div>
-      <div>
-        <img src="./img/happiness.png " width="30px" />
-        <input class ="comment_btn" type="text" placeholder="댓글달기 ..." />
-        <a class="posting" href="#">게시</a>
-      </div>
-    </article>
+        <div class="to_do padding_10px ">
+          <div class="padding_10px"><b>ture_</b>외 <b>354명</b>이 좋아합니다</div>
+          <div class="padding_10px">
+            <div><b>cann_ya</b> 너무귀여워요//</div>
+            <div><b>yujin_5513</b>  이렇게 잘 어울릴줄이야 울 콩이도 씌워주고 싶네요♥ </div>
+            <div><b>jimi_4143</b>  핳 너무 귀여워 진짜 숨멎</div>
+            <div>52분전</div>
+          </div>
+          <div class=>
+            <input class="comment_input" placeholder="댓글달기"/>
+            <button class="posting_btn">게시</button>
+          </div>
+        </div>
+      </div>  
+    </main>
   </body>
 </html>
