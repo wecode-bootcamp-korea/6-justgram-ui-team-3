@@ -11,6 +11,10 @@ body {
   align-items: center;
 }
 
+.none {
+  display: none;
+}
+
 /* ---nav--- */
 #nav {
   justify-content: space-around;
@@ -55,9 +59,44 @@ body {
 
 .navExplore,
 .navHeart,
+.navInfo {
+  height: 27.5px;
+  margin: 0 5px;
+}
+
 .navProfile {
   height: 27.5px;
   margin: 0 5px;
+  padding: 2px;
+  border-radius: 100%;
+  border: 1px solid black;
+  cursor: pointer;
+}
+
+.profileMenu {
+  flex-direction: column;
+  position: absolute;
+  right: 32.5px;
+  background-color: white;
+  border: 1px solid rgb(219, 219, 219);
+  border-radius: 5px;
+  font-size: 16.5px;
+}
+
+.profileMenuList {
+  display: flex;
+  justify-content: space-between;
+  width: 125px;
+  margin: 10px;
+}
+
+.profileMenuList:nth-of-type(4) {
+  justify-content: center;
+  cursor: pointer;
+}
+
+.menuicons {
+  height: 25px;
 }
 /* ---nav--- */
 
@@ -177,6 +216,7 @@ body {
   background-color: white;
   color: rgb(74, 149, 246);
   font-size: 15px;
+  cursor: pointer;
 }
 
 .commentInput:focus {

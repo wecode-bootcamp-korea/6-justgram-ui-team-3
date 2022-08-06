@@ -1,3 +1,18 @@
+const navProfile = document.querySelector(".navProfile");
+const profileMenu = document.querySelector(".profileMenu");
+
+profileMenu.style.display = "none";
+let profileCounter = 1;
+navProfile.addEventListener("click", function () {
+  if (profileCounter % 2 === 1) {
+    profileMenu.style.display = "flex";
+    profileCounter += 1;
+  } else {
+    profileMenu.style.display = "none";
+    profileCounter -= 1;
+  }
+});
+
 fetch("./data/feedData.json")
   .then((res) => res.json())
   .then((data) => {
@@ -79,7 +94,7 @@ fetch("./data/feedData.json")
 
         commentWrapper.className = "commentWrapper";
         comment.className = "chatBox comment";
-        comment.innerHTML = `<span class="bold">justcode_bootcamp</span> ${commentInputs[i].value}`;
+        comment.innerHTML = `<span class="bold">rlawlsyoung</span> ${commentInputs[i].value}`;
         img.className = "commentHeart";
         img.src = "img/heart.png";
 
@@ -99,7 +114,7 @@ fetch("./data/feedData.json")
 
           commentWrapper.className = "commentWrapper";
           comment.className = "chatBox comment";
-          comment.innerHTML = `<span class="bold">justcode_bootcamp</span> ${commentInputs[i].value}`;
+          comment.innerHTML = `<span class="bold">rlawlsyoung</span> ${commentInputs[i].value}`;
           img.className = "commentHeart";
           img.src = "img/heart.png";
 
