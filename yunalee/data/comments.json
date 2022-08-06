@@ -1,0 +1,24 @@
+{
+    "comments":[
+        {
+            "id" : 1,
+            "username": "code_kim",
+            "content": "정말 너무 귀여워요☆"
+        },
+        {
+            "id" : 2,
+            "username" : "yu_a",
+            "content" : "우리집 도치에게도 한번 저런 이쁜 왕관 씌워보고 싶어요 ^^"
+        },
+        {
+            "id": 3,
+            "username": "yu_jin00332",
+            "content" : "꺄아아 너무 귀여운거 아니예요 ♥"
+        },
+        {
+            "id":4,
+            "username":"coya_3434",
+            "content": "오구 너무 잘 어울리네요"
+        }
+    ]
+}
