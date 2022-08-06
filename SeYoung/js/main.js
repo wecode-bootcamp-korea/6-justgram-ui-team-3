@@ -19,6 +19,24 @@ Array.from(commentWriteButton).forEach((button, index) => {
   });
 });
 
+Array.from(commentWriteInput).forEach((input, index) => {
+  input.addEventListener("keydown", (event) => {
+    if (event.keyCode == "13") {
+      const content = commentWriteInput[index].value;
+
+      const childElem = document.createElement("div");
+
+      const nameSpan = document.createElement("span");
+      nameSpan.className = "comment-name";
+      nameSpan.textContent = "seeyong_0";
+
+      childElem.append(nameSpan, content);
+
+      commentList[index].appendChild(childElem);
+    }
+  });
+});
+
 // feed mock data fetch 후 댓글 출력
 const uploadedComments = document.getElementsByClassName("feed-comment-list");
 

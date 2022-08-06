@@ -49,7 +49,7 @@
   font-size: 15px;
 }
 
-#feed-story-wraper {
+#feed-story-wrapper {
   background-color: white;
   display: flex;
   width: 500px;
@@ -132,6 +132,11 @@
 }
 
 .comment-id {
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+.comment-name {
   font-weight: bold;
   margin-right: 10px;
 }
