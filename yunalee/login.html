@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JUSTGRAM</title>
+    <link rel="stylesheet" href="./style/login.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lobster&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body class="flex_wrapper">
+    <div class="login-container">
+      <div class="flex_wrapper">
+        <span class="logo-style">Justgram</span>
+      </div>
+      <div>
+        <form id="login-form">  
+          <div class="input_wrapper flex_wrapper">
+            <input
+            id="login_id"
+            class="input_style"
+            type="text"
+            placeholder="전화번호, 사용자 이름 또는 이메일"
+          />
+          </div>
+           <div class="input_wrapper flex_wrapper">
+              <input
+                id="login_pw"
+                class="input_style"
+                type="password"
+                placeholder="비밀번호"
+              />
+            </div>
+            <div class="flex_wrapper">
+              <button id="login_button" class="button_style" type="submit">
+                  로그인
+              </button>
+            </div>
+        </div>
+      <div class="flex_wrapper">
+        <a href="#" class="forget">비밀번호를 잊으셨나요?</a>
+      </div>
+    </div>
+  </body>
+  <script src="./js/login.js"></script>
+</html>
