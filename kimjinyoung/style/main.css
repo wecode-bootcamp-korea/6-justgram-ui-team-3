@@ -1,0 +1,228 @@
+body {
+  background-color: rgb(250, 250, 250);
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.flexCenter {
+  display: flex;
+  align-items: center;
+}
+
+.none {
+  display: none;
+}
+
+/* ---nav--- */
+#nav {
+  justify-content: space-around;
+  width: 100%;
+  padding: 12px;
+  background-color: white;
+  border-bottom: 1px solid rgb(219, 219, 219);
+  position: fixed;
+}
+
+.navLogo {
+  height: 27.5px;
+  padding-right: 10px;
+  border-right: black solid 3px;
+}
+
+.navTitle {
+  padding-left: 10px;
+  font-family: "Lobster", cursive;
+  font-size: 25px;
+}
+
+.searchBox {
+  position: relative;
+}
+
+.searchInput {
+  height: 30px;
+  width: 250px;
+  text-align: center;
+  background-color: rgb(239, 239, 239);
+  border: none;
+  border-radius: 5px;
+}
+
+.searchIcon {
+  height: 17.5px;
+  position: absolute;
+  top: 7px;
+  left: 12px;
+}
+
+.navExplore,
+.navHeart,
+.navInfo {
+  height: 27.5px;
+  margin: 0 5px;
+}
+
+.navProfile {
+  height: 27.5px;
+  margin: 0 5px;
+  padding: 2px;
+  border-radius: 100%;
+  border: 1px solid black;
+  cursor: pointer;
+}
+
+.profileMenu {
+  flex-direction: column;
+  position: absolute;
+  right: 32.5px;
+  background-color: white;
+  border: 1px solid rgb(219, 219, 219);
+  border-radius: 5px;
+  font-size: 16.5px;
+}
+
+.profileMenuList {
+  display: flex;
+  justify-content: space-between;
+  width: 125px;
+  height: 25px;
+  padding: 15px 20px 15px 17.5px;
+  border-bottom: 1px solid rgb(219, 219, 219);
+}
+
+.profileMenuList:nth-of-type(4) {
+  justify-content: center;
+  cursor: pointer;
+  border: none;
+}
+
+.menuicons {
+  height: 25px;
+}
+/* ---nav--- */
+
+/* ---section, article--- */
+#section {
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.article {
+  flex-direction: column;
+  width: 450px;
+  margin: 20px 0 0 0;
+
+  background-color: white;
+  border-radius: 8px;
+  border: 1px solid rgb(219, 219, 219);
+}
+
+.article:nth-of-type(1) {
+  margin-top: 77px;
+}
+
+.articleTop {
+  justify-content: space-between;
+  width: 430px;
+  margin: 10px;
+}
+
+.articleProfile {
+  height: 40px;
+  width: 40px;
+  border-radius: 20px;
+}
+
+.articleIdTop {
+  margin-left: 15px;
+}
+
+.articleMore {
+  height: 17.5px;
+}
+
+.articleImg {
+  width: 100%;
+}
+
+.articleMiddle {
+  justify-content: space-between;
+  width: 430px;
+  margin: 10px;
+}
+
+.articleHeart,
+.articleChat,
+.articleShare {
+  height: 25px;
+  margin-right: 12px;
+}
+
+.articleBookmark {
+  height: 25px;
+}
+
+.writer {
+  word-break: break-all;
+}
+
+.chatBox {
+  width: 430px;
+  margin: 0 10px 5px 10px;
+  font-size: 14px;
+}
+
+.comment {
+  word-break: break-all;
+}
+
+.like {
+  margin-bottom: 18px;
+}
+
+.commentWrapper {
+  display: flex;
+  justify-content: space-between;
+  width: 440px;
+}
+
+.commentHeart {
+  height: 14px;
+}
+
+.commentInputWrapper {
+  width: 100%;
+  height: 45px;
+  margin-top: 10px;
+  border-top: 1px solid rgb(219, 219, 219);
+}
+
+.commentInputBox {
+  width: 400px;
+  height: 44px;
+}
+
+.commentInput {
+  width: 380px;
+  height: 23px;
+  margin: 10px;
+  border: none;
+  font-size: 15px;
+}
+
+.commentBtn {
+  height: 40px;
+  width: 50px;
+  border: none;
+  background-color: white;
+  color: rgb(74, 149, 246);
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.commentInput:focus {
+  outline: none;
+}
+/* ---section, article--- */

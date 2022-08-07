@@ -1,0 +1,63 @@
+[
+  {
+    "articleProfile": "./img/me.jpg",
+    "articleId": "rlawlsdud",
+    "articleImg": "./img/me2.jpg",
+    "liker": "justcode_bootcamp",
+    "likers": "1,234",
+    "isLiked": false,
+    "articleText": "12345",
+    "comment": [
+      {
+        "commentId": "justcode_bootcamp",
+        "commentText": "안녕하세요"
+      },
+      {
+        "commentId": "kanweyest",
+        "commentText": "hi korea"
+      }
+    ]
+  },
+  {
+    "articleProfile": "./img/gold.jpg",
+    "articleId": "19990826",
+    "articleImg": "./img/mv.jpg",
+    "liker": "justcode_bootcamp",
+    "likers": "10,143",
+    "isLiked": false,
+    "articleText": "ok",
+    "comment": [
+      {
+        "commentId": "justcode_bootcamp",
+        "commentText": "멋져요"
+      },
+      {
+        "commentId": "badaby",
+        "commentText": "lesss go"
+      }
+    ]
+  },
+  {
+    "articleProfile": "./img/me.jpg",
+    "articleId": "rlawlsdud",
+    "articleImg": "./img/seoul.jpg",
+    "liker": "justcode_bootcamp",
+    "likers": "4,237",
+    "isLiked": true,
+    "articleText": "서울 야경",
+    "comment": [
+      {
+        "commentId": "justcode_bootcamp",
+        "commentText": "멋져요"
+      },
+      {
+        "commentId": "lendrick_kamar",
+        "commentText": "awesome"
+      },
+      {
+        "commentId": "parkjongwoo",
+        "commentText": "goob"
+      }
+    ]
+  }
+]
