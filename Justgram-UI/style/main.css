@@ -1,0 +1,241 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-color: #efefef;
+}
+
+button {
+  padding: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+}
+
+.bold-14px {
+  font-weight: bold;
+  font-size: 14px;
+}
+
+/*** 상단 nav css 코드 ***/
+.nav-container {
+  justify-content: space-evenly;
+  height: 60px;
+  border: 1px solid lightgray;
+  background-color: white;
+}
+
+.left-wrapper {
+}
+
+.logo-text {
+  font-family: "Lobster", cursive;
+  font-size: 24px;
+}
+
+.center-wrapper {
+  padding: 8px 15px;
+  border-radius: 7px;
+  background-color: #efefef;
+}
+
+.search-box {
+  width: 250px;
+}
+
+.search-icon {
+  margin-right: 8px;
+  width: 15px;
+}
+
+.search-input {
+  border: none;
+  background-color: #efefef;
+}
+
+.search-input:focus {
+  outline: none;
+}
+
+.right-wrapper {
+}
+
+.icon-box {
+  justify-content: space-around;
+  padding-left: 5px;
+}
+
+.icon-box img {
+  width: 25px;
+  margin: 7px;
+}
+
+/*** feed css 코드 ***/
+.feed-container {
+  margin-top: 30px;
+  padding: 0 18%;
+}
+
+.feed-whole-wrapper {
+  background-color: white;
+  border: 1px solid lightgray;
+  border-radius: 10px;
+}
+
+/*feed 프로필 사진, 아이디 래퍼*/
+.feed-header-wrapper {
+  justify-content: space-between;
+  padding: 0 12px;
+  height: 58px;
+}
+
+.profile-img {
+  margin-right: 10px;
+  width: 38px;
+  height: 38px;
+  border: 1px solid lightgray;
+  border-radius: 70%;
+  overflow: hidden;
+}
+
+.profile-id {
+  font-size: 15pxl;
+}
+
+.menu-box {
+  width: 15px;
+}
+/*feed 메인 사진*/
+.feed-photo {
+  width: 100%;
+}
+/*feed 댓글 래퍼*/
+.feed-comment-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+/*feed 댓글 - 아이콘 래퍼*/
+.comment-icon-box {
+  justify-content: space-between;
+}
+
+.comment-icon-box img {
+  width: 23px;
+}
+
+.bookmark-icon {
+  margin: 7px 12px 7px;
+}
+/*feed 댓글 - 좋아요 래퍼*/
+.like-comment-box {
+  padding: 10px;
+}
+
+.like-profile-img {
+  margin-right: 3px;
+  width: 20px;
+  height: 20px;
+  border-radius: 70%;
+  object-fit: contain;
+  overflow: hidden;
+}
+
+.like-profile-text {
+  text-align: center;
+  font-size: 14px;
+}
+
+.like-profile-text span {
+  font-weight: bold;
+}
+/*feed 댓글 - 피드 메인 텍스트*/
+.feed-text {
+  padding: 0 12px 8px;
+  font-size: 14px;
+}
+
+.feed-text div {
+  margin-right: 3px;
+}
+
+.plus-content {
+  color: grey;
+}
+/*feed 댓글 - 댓글 텍스트*/
+.numbers-of-comment {
+  padding: 0 12px 8px;
+  font-size: 12px;
+  color: grey;
+}
+
+.comment-text-box {
+  padding: 0 12px;
+}
+
+.comment-text-box li {
+  padding-bottom: 3px;
+  list-style-type: none;
+  font-size: 14px;
+}
+
+.comment-text-box p {
+  display: inline;
+}
+
+.comment-text-box span {
+  margin-right: 3px;
+  font-weight: bold;
+}
+
+.minute {
+  margin: 8px 0 10px 12px;
+  color: grey;
+  font-size: 12px;
+}
+/*feed 댓글 - 피드 댓글 인풋*/
+.comment-input {
+  position: relative;
+  justify-content: space-between;
+  padding: 12px;
+  border-top: 1px solid lightgray;
+}
+
+.upload-id-input,
+.upload-comment-input {
+  height: 30px;
+  border: none;
+  padding: 0;
+  margin: 0;
+}
+
+.upload-id-input:focus,
+.upload-comment-input:focus {
+  outline: none;
+}
+
+.upload-id-input {
+  width: 20%;
+}
+
+.upload-comment-input {
+  width: 65%;
+}
+
+.upload-btn {
+  position: absolute;
+  right: 12px;
+  top: 19px;
+  background-color: white;
+  border: none;
+  color: rgba(100, 148, 237, 0.655);
+  font-weight: bold;
+}
