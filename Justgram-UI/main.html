@@ -19,61 +19,50 @@
     <title>Document</title>
   </head>
   <body>
-    <nav class="nav-container">
+    <nav class="nav-container flex">
       <div class="left-wrapper">
         <span class="logo-text">Justgram</span>
       </div>
       <div class="center-wrapper">
-        <div class="search-box">
-          <span class="search-icon"></span>
-          <span class="search-text">검색</span>
-          <input class="search-input" type="text" />
+        <div class="search-box flex">
+          <img class="search-icon" src="https://cdn3.iconfinder.com/data/icons/unicons-vector-icons-pack/32/search-512.png">
+          <input class="search-input" type="text" placeholder="검색"/>
         </div>
       </div>
       <div class="right-wrapper">
         <div class="icon-box">
-          <div class="expore-icon">
-            <img
-              src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/explore.png"
-            />
-          </div>
-          <div class="heart-icon">
-            <img
-              src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/heart.png"
-            />
-          </div>
-          <div class="my-icon">
-            <img
-              src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/profile.png"
-            />
+            <img class="expore-icon"
+              src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/explore.png">
+            <img class="heart-icon"
+              src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/heart.png">
+            <img class="my-icon"
+              src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/profile.png">
           </div>
         </div>
       </div>
     </nav>
     <section class="feed-container">
       <div class="feed-whole-wrapper">
-        <div class="feed-header-wrapper">
-          <div class="profile-box">
+        <div class="feed-header-wrapper flex">
+          <div class="profile-box flex">
             <img
               class="profile-img"
-              src="https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMjA0MThfMTE2%2FMDAxNjUwMjc3MTg4NzE0.sU6pj2pha6z5KAVbQb20hDNS6pElhBZFfLR_5KZu2K4g.ihqX4jJxxOSzORFRlT22_pkYY497QP9dR6g7GGHURVYg.JPEG.ekfla203%2FIMG_1460.JPG&type=sc960_832"
+              src="https://blogpfthumb-phinf.pstatic.net/MjAyMjA3MjhfMTA1/MDAxNjU5MDAzMTUxNzI0._O2K7m2uvJuDfr9ZZwFMwd-2HfguxBbVTKWWkSkvi94g.lqIEX_8Jn9GNB13B81tyDL3wZxQu7ycGf0BLXlYxo-gg.PNG.susstore/profileImage2.png/profileImage2.png?type=w161"
             />
-            <p class="profile-id"><strong>ioni_19</strong></p>
+            <span class="profile-id">ioni_19</span>
           </div>
-          <div class="menu-box">
-            <img
-              src="https://cdn-icons.flaticon.com/png/128/3747/premium/3747742.png?token=exp=1659511068~hmac=b11b7c4ba9234617c64137dbcc4a8280"
-            />
-          </div>
+          <img class="menu-box"
+            src="https://icon-library.com/images/three-dots-icon/three-dots-icon-9.jpg"/>
         </div>
         <div class="feed-photo-wrapper">
           <img
             class="feed-photo"
-            src="https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMjA2MTBfMjg1%2FMDAxNjU0Nzk0ODc5NTA3.88sOew_EJH9N6-sPiPS3ed1G3osnIq_ZL14cOKLcX_4g.IKcPOLBOAZ1_WmptVJ_5JvYYDO_wZhhkVSroGBACW78g.JPEG.ab7042%2F%25C0%25DF_%25B8%25D4%25B0%25ED_%25C0%25DF_%25BB%25EC%25C0%25DA.jpg&type=sc960_832"
+            src="https://search.pstatic.net/common/?src=http%3A%2F%2Fshop1.phinf.naver.net%2F20220119_220%2F16425684474684rYsJ_JPEG%2F43704290164195289_1791111381.jpg&type=sc960_832"
           />
-          <div class="feed-comment-wrapper"></div>
-          <div class="comment-icon-box">
-            <div class="icon-box">
+        </div>
+        <div class="feed-comment-wrapper">
+          <div class="comment-icon-box flex">
+            <div class="icon-box flex">
               <img
                 src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/heart.png"
               />
@@ -84,13 +73,9 @@
                 src="https://cdn-icons-png.flaticon.com/512/6165/6165369.png"
               />
             </div>
-            <div class="save-icon">
-              <img
-                src="https://cdn1.iconfinder.com/data/icons/instagram-feature-outline/32/icon_instagram-27-512.png"
-              />
-            </div>
+            <img class="bookmark-icon" src="https://cdn1.iconfinder.com/data/icons/instagram-feature-outline/32/icon_instagram-27-512.png">
           </div>
-          <div class="like-comment-box">
+          <div class="like-comment-box flex">
             <img
               class="like-profile-img"
               src="https://blogpfthumb-phinf.pstatic.net/MjAyMTA2MDJfMjY4/MDAxNjIyNjI2NDYzMzEx.bu64sCMgQr-nI8oq3mrH792iR6sUMGWP78YJSBPpcmsg.i0Ifrbnzy2R2DHa2ndL9eYmy3SwXen9pgTYptpF0NwIg.PNG.sher_lock0106/profileImage.png?type=w161"
@@ -99,14 +84,15 @@
               <span>252_yewon</span>님 <span>외 100,022명</span>이 좋아합니다
             </div>
           </div>
-          <div class="feed-text">
-            <div class="profile-id">ioni_19</div>
-            <div class="feed-content">잘 먹고 잘 살자~</div>
+          <div class="feed-text flex">
+            <div class="bold-14px">ioni_19</div>
+            <div class="feed-content">매옹이 키링 나 사줄 사람 없</div>
             <div class="plus-content">.... 더 보기</div>
           </div>
+          <div class=numbers-of-comment>댓글 12개 모두 보기</div>
           <ul class="comment-text-box"></ul>
           <p class="minute">42분 전</p>
-          <div class="comment-input">
+          <div class="comment-input" flex>
             <input class="upload-id-input" type="text" placeholder="아이디" />
             <input
               class="upload-comment-input"
@@ -120,28 +106,26 @@
     </section>
     <section class="feed-container">
       <div class="feed-whole-wrapper">
-        <div class="feed-header-wrapper">
-          <div class="profile-box">
+        <div class="feed-header-wrapper flex">
+          <div class="profile-box flex">
             <img
               class="profile-img"
-              src="https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMjA0MThfMTE2%2FMDAxNjUwMjc3MTg4NzE0.sU6pj2pha6z5KAVbQb20hDNS6pElhBZFfLR_5KZu2K4g.ihqX4jJxxOSzORFRlT22_pkYY497QP9dR6g7GGHURVYg.JPEG.ekfla203%2FIMG_1460.JPG&type=sc960_832"
+              src="https://blogpfthumb-phinf.pstatic.net/MjAyMjA3MjhfMTA1/MDAxNjU5MDAzMTUxNzI0._O2K7m2uvJuDfr9ZZwFMwd-2HfguxBbVTKWWkSkvi94g.lqIEX_8Jn9GNB13B81tyDL3wZxQu7ycGf0BLXlYxo-gg.PNG.susstore/profileImage2.png/profileImage2.png?type=w161"
             />
-            <p class="profile-id"><strong>ioni_19</strong></p>
+            <span class="profile-id">ioni_19</span>
           </div>
-          <div class="menu-box">
-            <img
-              src="https://cdn-icons.flaticon.com/png/128/3747/premium/3747742.png?token=exp=1659511068~hmac=b11b7c4ba9234617c64137dbcc4a8280"
-            />
-          </div>
+          <img class="menu-box"
+            src="https://icon-library.com/images/three-dots-icon/three-dots-icon-9.jpg"/>
         </div>
         <div class="feed-photo-wrapper">
           <img
             class="feed-photo"
-            src="https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMjA2MTBfMjg1%2FMDAxNjU0Nzk0ODc5NTA3.88sOew_EJH9N6-sPiPS3ed1G3osnIq_ZL14cOKLcX_4g.IKcPOLBOAZ1_WmptVJ_5JvYYDO_wZhhkVSroGBACW78g.JPEG.ab7042%2F%25C0%25DF_%25B8%25D4%25B0%25ED_%25C0%25DF_%25BB%25EC%25C0%25DA.jpg&type=sc960_832"
+            src="https://search.pstatic.net/common/?src=http%3A%2F%2Fshop1.phinf.naver.net%2F20220119_220%2F16425684474684rYsJ_JPEG%2F43704290164195289_1791111381.jpg&type=sc960_832"
           />
-          <div class="feed-comment-wrapper"></div>
-          <div class="comment-icon-box">
-            <div class="icon-box">
+        </div>
+        <div class="feed-comment-wrapper">
+          <div class="comment-icon-box flex">
+            <div class="icon-box flex">
               <img
                 src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/heart.png"
               />
@@ -152,13 +136,9 @@
                 src="https://cdn-icons-png.flaticon.com/512/6165/6165369.png"
               />
             </div>
-            <div class="save-icon">
-              <img
-                src="https://cdn1.iconfinder.com/data/icons/instagram-feature-outline/32/icon_instagram-27-512.png"
-              />
-            </div>
+            <img class="bookmark-icon" src="https://cdn1.iconfinder.com/data/icons/instagram-feature-outline/32/icon_instagram-27-512.png">
           </div>
-          <div class="like-comment-box">
+          <div class="like-comment-box flex">
             <img
               class="like-profile-img"
               src="https://blogpfthumb-phinf.pstatic.net/MjAyMTA2MDJfMjY4/MDAxNjIyNjI2NDYzMzEx.bu64sCMgQr-nI8oq3mrH792iR6sUMGWP78YJSBPpcmsg.i0Ifrbnzy2R2DHa2ndL9eYmy3SwXen9pgTYptpF0NwIg.PNG.sher_lock0106/profileImage.png?type=w161"
@@ -167,15 +147,15 @@
               <span>252_yewon</span>님 <span>외 100,022명</span>이 좋아합니다
             </div>
           </div>
-          <div class="feed-text">
-            <div class="profile-id">ioni_19</div>
-            <div class="feed-content">잘 먹고 잘 살자~</div>
+          <div class="feed-text flex">
+            <div class="bold-14px">ioni_19</div>
+            <div class="feed-content">매옹이 최고 귀엽다! </div>
             <div class="plus-content">.... 더 보기</div>
           </div>
-          <ul class="comment-text-box">
-          </ul>
+          <div class=numbers-of-comment>댓글 12개 모두 보기</div>
+          <ul class="comment-text-box"></ul>
           <p class="minute">42분 전</p>
-          <div class="comment-input">
+          <div class="comment-input" flex>
             <input class="upload-id-input" type="text" placeholder="아이디" />
             <input
               class="upload-comment-input"
@@ -189,28 +169,26 @@
     </section>
     <section class="feed-container">
       <div class="feed-whole-wrapper">
-        <div class="feed-header-wrapper">
-          <div class="profile-box">
+        <div class="feed-header-wrapper flex">
+          <div class="profile-box flex">
             <img
               class="profile-img"
-              src="https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMjA0MThfMTE2%2FMDAxNjUwMjc3MTg4NzE0.sU6pj2pha6z5KAVbQb20hDNS6pElhBZFfLR_5KZu2K4g.ihqX4jJxxOSzORFRlT22_pkYY497QP9dR6g7GGHURVYg.JPEG.ekfla203%2FIMG_1460.JPG&type=sc960_832"
+              src="https://blogpfthumb-phinf.pstatic.net/MjAyMjA3MjhfMTA1/MDAxNjU5MDAzMTUxNzI0._O2K7m2uvJuDfr9ZZwFMwd-2HfguxBbVTKWWkSkvi94g.lqIEX_8Jn9GNB13B81tyDL3wZxQu7ycGf0BLXlYxo-gg.PNG.susstore/profileImage2.png/profileImage2.png?type=w161"
             />
-            <p class="profile-id"><strong>ioni_19</strong></p>
+            <span class="profile-id">ioni_19</span>
           </div>
-          <div class="menu-box">
-            <img
-              src="https://cdn-icons.flaticon.com/png/128/3747/premium/3747742.png?token=exp=1659511068~hmac=b11b7c4ba9234617c64137dbcc4a8280"
-            />
-          </div>
+          <img class="menu-box"
+            src="https://icon-library.com/images/three-dots-icon/three-dots-icon-9.jpg"/>
         </div>
         <div class="feed-photo-wrapper">
           <img
             class="feed-photo"
-            src="https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMjA2MTBfMjg1%2FMDAxNjU0Nzk0ODc5NTA3.88sOew_EJH9N6-sPiPS3ed1G3osnIq_ZL14cOKLcX_4g.IKcPOLBOAZ1_WmptVJ_5JvYYDO_wZhhkVSroGBACW78g.JPEG.ab7042%2F%25C0%25DF_%25B8%25D4%25B0%25ED_%25C0%25DF_%25BB%25EC%25C0%25DA.jpg&type=sc960_832"
+            src="https://search.pstatic.net/common/?src=http%3A%2F%2Fshop1.phinf.naver.net%2F20220119_220%2F16425684474684rYsJ_JPEG%2F43704290164195289_1791111381.jpg&type=sc960_832"
           />
-          <div class="feed-comment-wrapper"></div>
-          <div class="comment-icon-box">
-            <div class="icon-box">
+        </div>
+        <div class="feed-comment-wrapper">
+          <div class="comment-icon-box flex">
+            <div class="icon-box flex">
               <img
                 src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/heart.png"
               />
@@ -221,13 +199,9 @@
                 src="https://cdn-icons-png.flaticon.com/512/6165/6165369.png"
               />
             </div>
-            <div class="save-icon">
-              <img
-                src="https://cdn1.iconfinder.com/data/icons/instagram-feature-outline/32/icon_instagram-27-512.png"
-              />
-            </div>
+            <img class="bookmark-icon" src="https://cdn1.iconfinder.com/data/icons/instagram-feature-outline/32/icon_instagram-27-512.png">
           </div>
-          <div class="like-comment-box">
+          <div class="like-comment-box flex">
             <img
               class="like-profile-img"
               src="https://blogpfthumb-phinf.pstatic.net/MjAyMTA2MDJfMjY4/MDAxNjIyNjI2NDYzMzEx.bu64sCMgQr-nI8oq3mrH792iR6sUMGWP78YJSBPpcmsg.i0Ifrbnzy2R2DHa2ndL9eYmy3SwXen9pgTYptpF0NwIg.PNG.sher_lock0106/profileImage.png?type=w161"
@@ -236,15 +210,15 @@
               <span>252_yewon</span>님 <span>외 100,022명</span>이 좋아합니다
             </div>
           </div>
-          <div class="feed-text">
-            <div class="profile-id">ioni_19</div>
+          <div class="feed-text flex">
+            <div class="bold-14px">ioni_19</div>
             <div class="feed-content">잘 먹고 잘 살자~</div>
             <div class="plus-content">.... 더 보기</div>
           </div>
-          <ul class="comment-text-box">
-          </ul>
+          <div class=numbers-of-comment>댓글 12개 모두 보기</div>
+          <ul class="comment-text-box"></ul>
           <p class="minute">42분 전</p>
-          <div class="comment-input">
+          <div class="comment-input" flex>
             <input class="upload-id-input" type="text" placeholder="아이디" />
             <input
               class="upload-comment-input"
@@ -256,32 +230,6 @@
         </div>
       </div>
     </section>
-    <script>
-      const comments = document.getElementsByClassName("comment-text-box");
-
-
-      Array.from(comments).forEach((el, index) => {
-
-      let comment_list;
-
-      fetch("/data/comment.json")
-        .then((res) => res.json())
-        .then((data) => {
-          comment_list = data;
-          comment_list.forEach((comment) => {
-            const liElement = document.createElement("li");
-
-            const spanElement = document.createElement("span");
-            spanElement.innerText = comment.userName;
-
-            const pElement = document.createElement("p");
-            pElement.innerText = comment.content;
-            liElement.append(spanElement, pElement);
-            comments[index].appendChild(liElement);
-          });
-        });
-      })
-    </script>
     <script src="/js/main.js"></script>
   </body>
 </html>

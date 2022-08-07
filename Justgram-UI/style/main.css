@@ -7,19 +7,34 @@ body {
   background-color: #efefef;
 }
 
+button {
+  padding: 0;
+}
+
 ul {
   margin: 0;
   padding: 0;
 }
 
-/* //상단 nav css 코드 */
-.nav-container {
-  border: 1px solid lightgray;
+.flex {
   display: flex;
-  justify-content: space-evenly;
   align-items: center;
+}
+
+.bold-14px {
+  font-weight: bold;
+  font-size: 14px;
+}
+
+/*** 상단 nav css 코드 ***/
+.nav-container {
+  justify-content: space-evenly;
   height: 60px;
+  border: 1px solid lightgray;
   background-color: white;
+}
+
+.left-wrapper {
 }
 
 .logo-text {
@@ -28,21 +43,18 @@ ul {
 }
 
 .center-wrapper {
+  padding: 8px 15px;
   border-radius: 7px;
   background-color: #efefef;
-  padding: 8px 10px;
 }
 
 .search-box {
-  display: flex;
-  align-items: center;
   width: 250px;
 }
 
-.search-text {
-  color: gray;
-  font-size: 15px;
-  padding: 0 4px;
+.search-icon {
+  margin-right: 8px;
+  width: 15px;
 }
 
 .search-input {
@@ -54,168 +66,155 @@ ul {
   outline: none;
 }
 
+.right-wrapper {
+}
+
 .icon-box {
-  display: flex;
   justify-content: space-around;
-  align-items: center;
+  padding-left: 5px;
 }
 
 .icon-box img {
   width: 25px;
   margin: 7px;
 }
-/* 상단 nav css 코드 끝 */
 
-/* feed css 코드 */
+/*** feed css 코드 ***/
 .feed-container {
-  display: flex;
+  margin-top: 30px;
   padding: 0 18%;
 }
 
 .feed-whole-wrapper {
-  border: 1px solid lightgray;
   background-color: white;
-  width: 470px;
-  margin-top: 30px;
+  border: 1px solid lightgray;
   border-radius: 10px;
 }
 
+/*feed 프로필 사진, 아이디 래퍼*/
 .feed-header-wrapper {
-  display: flex;
   justify-content: space-between;
-  align-items: center;
+  padding: 0 12px;
   height: 58px;
 }
 
-.profile-box {
-  padding: 8px 10px 6px;
-  display: flex;
-  align-items: center;
-}
-
 .profile-img {
+  margin-right: 10px;
   width: 38px;
   height: 38px;
-  border-radius: 70%;
   border: 1px solid lightgray;
+  border-radius: 70%;
   overflow: hidden;
-  margin-right: 10px;
+}
+
+.profile-id {
+  font-size: 15pxl;
 }
 
 .menu-box {
-  padding-right: 20px;
+  width: 15px;
 }
-
-.menu-box img {
-  width: 20px;
-}
-
+/*feed 메인 사진*/
 .feed-photo {
   width: 100%;
 }
-
+/*feed 댓글 래퍼*/
 .feed-comment-wrapper {
   display: flex;
+  flex-direction: column;
 }
-
+/*feed 댓글 - 아이콘 래퍼*/
 .comment-icon-box {
-  display: flex;
   justify-content: space-between;
-}
-
-.icon-box {
-  display: flex;
-  margin-left: 2px;
 }
 
 .comment-icon-box img {
   width: 23px;
 }
 
-.save-icon {
-  padding-top: 4px;
-  padding-right: 8px;
+.bookmark-icon {
+  margin: 7px 12px 7px;
 }
-
+/*feed 댓글 - 좋아요 래퍼*/
 .like-comment-box {
-  display: flex;
-  align-items: center;
-  padding-top: 10px;
+  padding: 10px;
 }
 
 .like-profile-img {
+  margin-right: 3px;
   width: 20px;
   height: 20px;
-  object-fit: contain;
   border-radius: 70%;
+  object-fit: contain;
   overflow: hidden;
-  margin: 0 3px 1px 10px;
 }
 
 .like-profile-text {
-  font-size: 14px;
   text-align: center;
+  font-size: 14px;
 }
 
 .like-profile-text span {
   font-weight: bold;
 }
-
-.comment-text-box li {
-  list-style-type: none;
-  padding-bottom: 3px;
-  margin: 0 0 0 10px;
-  font-size: 14px;
-}
-
-.comment-text-box p {
-  height: 22px;
-  display: inline;
-}
-
-.id,
-.comment-text-box span {
-  font-weight: bold;
-  margin-right: 3px;
-}
-
-.minute {
-  font-size: 12px;
-  color: grey;
-  margin: 8px 0 10px 10px;
-}
-
+/*feed 댓글 - 피드 메인 텍스트*/
 .feed-text {
-  display: flex;
-  margin-top: 8px;
-  margin-left: 10px;
+  padding: 0 12px 8px;
+  font-size: 14px;
 }
 
 .feed-text div {
-  font-size: 14px;
   margin-right: 3px;
-  margin-bottom: 10px;
-}
-
-.profile-id {
-  font-weight: bold;
 }
 
 .plus-content {
   color: grey;
 }
+/*feed 댓글 - 댓글 텍스트*/
+.numbers-of-comment {
+  padding: 0 12px 8px;
+  font-size: 12px;
+  color: grey;
+}
 
+.comment-text-box {
+  padding: 0 12px;
+}
+
+.comment-text-box li {
+  padding-bottom: 3px;
+  list-style-type: none;
+  font-size: 14px;
+}
+
+.comment-text-box p {
+  display: inline;
+}
+
+.comment-text-box span {
+  margin-right: 3px;
+  font-weight: bold;
+}
+
+.minute {
+  margin: 8px 0 10px 12px;
+  color: grey;
+  font-size: 12px;
+}
+/*feed 댓글 - 피드 댓글 인풋*/
 .comment-input {
-  border-top: 1px solid lightgray;
-  padding: 10px;
-  display: flex;
+  position: relative;
   justify-content: space-between;
+  padding: 12px;
+  border-top: 1px solid lightgray;
 }
 
 .upload-id-input,
 .upload-comment-input {
-  border: none;
   height: 30px;
+  border: none;
+  padding: 0;
+  margin: 0;
 }
 
 .upload-id-input:focus,
@@ -224,7 +223,7 @@ ul {
 }
 
 .upload-id-input {
-  width: 70px;
+  width: 20%;
 }
 
 .upload-comment-input {
@@ -232,8 +231,11 @@ ul {
 }
 
 .upload-btn {
-  border: none;
+  position: absolute;
+  right: 12px;
+  top: 19px;
   background-color: white;
-  font-weight: bold;
+  border: none;
   color: rgba(100, 148, 237, 0.655);
+  font-weight: bold;
 }
