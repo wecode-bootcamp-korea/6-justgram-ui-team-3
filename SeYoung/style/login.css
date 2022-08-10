@@ -1,0 +1,78 @@
+body {
+  background-color: rgb(242, 239, 239);
+}
+.container {
+  height: 100%;
+}
+
+.login-container {
+  width: 500px;
+  border: 1px solid lightgray;
+  border-radius: 5px;
+  background-color: white;
+}
+
+.flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo-wrapper {
+  padding: 30px;
+}
+
+.logo-text {
+  font-family: "Lobster", cursive;
+  font-size: 48px;
+}
+.form-wrapper {
+}
+
+.login-wrapper {
+  background-color: rgb(244, 241, 241);
+  border: 1px solid lightgray;
+  border-radius: 3px;
+  margin-left: 40px;
+  margin-right: 40px;
+  margin-bottom: 10px;
+  font-size: 16px;
+  padding: 10px 10px;
+}
+.login-input {
+  background-color: rgb(244, 241, 241);
+  border: none;
+  width: 100%;
+}
+.login-input:focus {
+  outline: none;
+}
+
+.button-wrapper {
+  margin-left: 40px;
+  margin-right: 40px;
+  margin-bottom: 10px;
+}
+
+.login-button {
+  width: 100%;
+  color: rgb(255, 255, 255);
+  background-color: #8dbdfc;
+  border-radius: 5px;
+  border: none;
+  padding: 8px;
+  /* opacity: 1; */
+  cursor: not-allowed;
+}
+/* .login-button:disabled {
+  opacity: 0.5;
+} */
+
+.extra-wrapper {
+  padding-top: 250px;
+  padding-bottom: 20px;
+}
+
+.find-password {
+  color: rgb(0, 63, 108);
+}
